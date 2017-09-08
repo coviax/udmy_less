@@ -1,0 +1,5 @@
+com\tutorial\product\model\Proizvod.class
+com\tutorial\product\dao\ProizvodDAOImpl.class
+com\tutorial\product\dao\ProizvodDAO.class
+com\tutorial\product\sevice\ProizvodServiceImpl.class
+com\tutorial\product\sevice\ProizvodService.class
