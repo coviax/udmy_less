@@ -4,4 +4,34 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:/beans.xml</param-value>
+	</context-param>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>  
+  
+  <servlet>
+  	<servlet-name>PrikaziProizvodServlet</servlet-name>
+  	<display-name>PrikaziProizvodServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.tutorial.product.servlet.PrikaziProizvodServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>KreirajProizvodServlet</servlet-name>
+  	<display-name>KreirajProizvodServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.tutorial.product.servlet.KreirajProizvodServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>PrikaziProizvodServlet</servlet-name>
+  	<url-pattern>/PrikaziProizvodServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>KreirajProizvodServlet</servlet-name>
+  	<url-pattern>/KreirajProizvodServlet</url-pattern>
+  </servlet-mapping>
+
 </web-app>
