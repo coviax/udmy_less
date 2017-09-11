@@ -9,7 +9,7 @@
 
 	<bean id="proizvoddao" class="com.tutorial.product.dao.ProizvodDAOImpl" />
 
-	<bean id="proizvodservice" class="com.tutorial.product.sevice.ProizvodServiceImpl">
+	<bean id="proizvodservice" class="com.tutorial.product.service.ProizvodServiceImpl">
 		<property name="idao" ref="proizvoddao" />
 	</bean>
 
